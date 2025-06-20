@@ -1,60 +1,152 @@
-# CodeIgniter 4 Framework
+# ✨ AgroShield: Automatic Sliding Roof System 🌾
+<p align="center">
+  <img src="public/assets/images/logo_agroshield.png" alt="Poster AgroShield" width="500">
+</p>
+Sistem AgroShield adalah solusi inovatif yang dirancang untuk merevolusi praktik pertanian melalui pemantauan cerdas dan analisis data real-time. Dengan mengintegrasikan teknologi terkini, AgroShield membantu petani mengambil keputusan yang lebih tepat untuk mengoptimalkan kondisi pertumbuhan tanaman, memitigasi risiko, dan pada akhirnya meningkatkan produktivitas serta kualitas hasil panen. 🧑‍🌾📈
 
-## What is CodeIgniter?
+## 👥 Anggota Kelompok
+- Ratukhansa Salsabila - 18223034
+- Fhatika Adhalisman Ryanjani - 18223062
+- Gabriela Jennifer Sandy - 18223092
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 📜 Poster 
+<p align="center">
+  <img src="public/assets/images/poster_agroshield.png" alt="Poster AgroShield" width="500">
+</p>
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📝 Deskripsi Sistem
+AgroShield dikembangkan untuk memberdayakan petani dengan wawasan yang mendalam tentang lingkungan pertanian mereka. Sistem ini mengumpulkan data krusial dari berbagai sensor yang ditempatkan di lahan pertanian, kemudian memprosesnya untuk menghasilkan informasi yang mudah dipahami dan actionable. Kami berfokus pada kemudahan penggunaan dan akurasi data untuk memastikan petani dapat mengelola lahan mereka dengan lebih efisien dan berkelanjutan. 💧☀️
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### Fitur-fitur utama yang menjadi inti dari AgroShield meliputi:
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- Pemantauan Sensor Real-time: Menampilkan data langsung dari sensor seperti kelembaban tanah 🌡️, suhu udara, kelembaban udara, intensitas cahaya, dan pH tanah (jika relevan). Data disajikan dalam format yang mudah dibaca di dashboard.
+- Analisis Data Historis & Tren: Menyediakan visualisasi data sensor dalam bentuk grafik interaktif 📊, memungkinkan pengguna untuk melacak perubahan, mengidentifikasi pola pertumbuhan, dan memprediksi kebutuhan tanaman di masa mendatang.
+- Prakiraan Cuaca Terintegrasi: Menampilkan data prakiraan cuaca yang relevan dengan lokasi pertanian ☁️, membantu petani merencanakan aktivitas seperti penyiraman, pemupukan, atau perlindungan tanaman dari cuaca ekstrem.
+- Sistem Rekomendasi Cerdas (Chatbot): Sebuah chatbot berbasis AI 🤖 yang berfungsi sebagai konsultan pertanian pribadi. Chatbot ini dapat memberikan saran berdasarkan data sensor terkini, membantu dalam identifikasi masalah (misalnya, kekurangan air, nutrisi berlebih), dan menawarkan solusi praktis.
+- Notifikasi & Peringatan Dini: Mengirimkan notifikasi otomatis 🔔 ke perangkat pengguna saat parameter lingkungan melewati ambang batas optimal, seperti kelembaban tanah yang terlalu rendah atau suhu yang terlalu tinggi, memungkinkan intervensi cepat.
+- Antarmuka Pengguna Intuitif (Dashboard): Dashboard yang dirancang dengan mempertimbangkan pengalaman pengguna (UX) yang optimal, mudah dinavigasi, dan dapat diakses dari berbagai perangkat (desktop, tablet, mobile). 📱💻
+  
+## ✨ Fitur Unggulan
+- Dashboard Interaktif menyediakan visualisasi yang jelas dan ringkas dari semua data sensor penting di satu tempat. Petani dapat melihat status kesehatan tanaman secara sekilas.
+- Analitik Data Mendalam menyediakan grafik interaktif yang memungkinkan eksplorasi data historis, identifikasi tren musiman, dan perbandingan performa antar periode tanam. 📈
+- Asisten Chatbot Konsultan untuk mendapatkan saran ahli secara instan untuk pertanyaan seputar irigasi, nutrisi, pengendalian hama, dan penyakit berdasarkan data lingkungan pertanian Anda. 💬🌿
 
-## Important Change with index.php
+## 🚀 Cara Penggunaan
+Persyaratan Sistem
+Untuk menjalankan AgroShield, pastikan sistem Anda memenuhi persyaratan berikut:
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+- Sistem Operasi: Linux, Windows, atau macOS.
+- Web Server: Apache 
+- PHP: Versi 7.4 atau lebih tinggi.
+- Composer: Manajer dependensi PHP.
+- Database: MySQL/MariaDB.
+- Node.js & npm/yarn: Untuk mengelola dependensi frontend (jika ada).
+- Perangkat IoT: Perangkat mikrokontroler (misalnya, ESP32, NodeMCU) yang dilengkapi dengan sensor tanah (kelembaban, pH), suhu, kelembaban udara, dan intensitas cahaya, serta memiliki konektivitas internet untuk mengirim data ke sistem. 🔌📡
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## 💻 Instalasi Cepat
 
-**Please** read the user guide for a better explanation of how CI4 works!
+Ikuti langkah-langkah di bawah ini untuk mengatur dan menjalankan proyek AgroShield di lingkungan lokal Anda:
 
-## Repository Management
+### ⚙️ Persyaratan Sistem
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+Pastikan Anda memiliki hal-hal berikut sebelum memulai:
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+* **Web Server:** Apache atau Nginx (direkomendasikan)
+* **PHP:** Versi 7.4 atau lebih tinggi
+* **Composer:** Untuk manajemen dependensi PHP
+* **Database:** MySQL/MariaDB (direkomendasikan)
+* **Node.js & npm/yarn:** Untuk mengelola dependensi frontend (jika ada).
+* **Perangkat IoT:** Perangkat mikrokontroler (misalnya, ESP32, NodeMCU) yang dilengkapi dengan sensor tanah (kelembaban, pH), suhu, kelembaban udara, dan intensitas cahaya, serta memiliki konektivitas internet untuk mengirim data ke sistem. 🔌📡
 
-## Contributing
+### ⬇️ Langkah-langkah Instalasi
 
-We welcome contributions from the community.
+1.  **Clone Repositori:**
+    Mulai dengan mengunduh kode sumber proyek dari repositori [AgroShield di GitHub](https://github.com/fhatikaadr/AgroShield):
+    ```bash
+    git clone https://github.com/fhatikaadr/AgroShield.git
+    cd agroshield
+    ```
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+2.  **Instal Dependensi PHP:**
+    Gunakan Composer untuk menginstal semua dependensi PHP yang diperlukan:
+    ```bash
+    composer install
+    ```
 
-## Server Requirements
+3.  **Konfigurasi Lingkungan (`.env`):**
+    * Buat salinan file `.env.example` dan ganti namanya menjadi `.env`:
+        ```bash
+        cp .env.example .env
+        ```
+    * Buka file `.env` dan sesuaikan pengaturan database Anda (`database.default.hostname`, `database.default.database`, `database.default.username`, `database.default.password`).
+    * Pastikan `CI_ENVIRONMENT = development` untuk mode pengembangan.
+    * Hasilkan APP KEY baru untuk keamanan aplikasi Anda:
+        ```bash
+        php spark key:generate
+        ```
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+4.  **Migrasi Database:**
+    Jalankan migrasi database untuk membuat struktur tabel yang diperlukan:
+    ```bash
+    php spark migrate
+    ```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+5.  **Seed Data (Opsional):**
+    Jika Anda ingin mengisi database dengan data contoh untuk pengujian atau demo, jalankan seeder:
+    ```bash
+    php spark db:seed ExampleSeeder
+    ```
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+6.  **Konfigurasi Web Server (Apache/Nginx):**
+    Arahkan `Document Root` server web Anda ke direktori `public` di dalam proyek `agroshield`.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+    * **Untuk Apache:**
+        Pastikan modul `mod_rewrite` diaktifkan dan file `.htaccess` di direktori `public` sudah dikonfigurasi dengan benar untuk penulisan ulang URL.
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+    * **Untuk Nginx:**
+        Berikut adalah contoh konfigurasi server dasar. Sesuaikan `server_name` dan `root` dengan pengaturan Anda:
+        ```nginx
+        server {
+            listen 80;
+            server_name agroshield.test; # Ganti dengan domain/IP Anda
+            root /path/to/agroshield/public; # Ganti dengan path absolut proyek Anda
+
+            index index.php index.html index.htm;
+
+            location / {
+                try_files $uri $uri/ /index.php?$query_string;
+            }
+
+            location ~ \.php$ {
+                include fastcgi_params;
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; # Sesuaikan dengan versi PHP-FPM Anda
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            }
+
+            # Optional: Hide .env and other sensitive files
+            location ~ /\.env {
+                deny all;
+            }
+        }
+        ```
+
+### ▶️ Menjalankan Aplikasi
+
+Setelah semua langkah instalasi dan konfigurasi selesai, Anda bisa mengakses sistem AgroShield melalui browser web Anda di `http://localhost:8080` atau domain yang Anda konfigurasikan.
+
+Untuk pengembangan, Anda juga bisa menggunakan server bawaan CodeIgniter:
+
+```bash
+php spark serve
+```
+
+## 🛠️ Teknologi yang Digunakan
+AgroShield dibangun dengan kombinasi teknologi modern untuk memastikan skalabilitas, kinerja, dan kemudahan pengembangan:
+
+- Backend Framework: CodeIgniter 4 (PHP)
+- Database: MySQL / MariaDB 🗄️
+- Frontend: HTML5, CSS3, JavaScript
+- Visualisasi Data: Chart.js 📈
+- Integrasi API: OpenWeatherMap API (untuk prakiraan cuaca) ☁️
+- IoT Platform: Broker HTTP untuk menerima data dari sensor. 💡
