@@ -11,7 +11,7 @@ Sistem AgroShield adalah solusi inovatif yang dirancang untuk merevolusi praktik
 
 ## 📜 Poster 
 <p align="center">
-  <img src="public/assets/images/poster_agroshield.png" alt="Poster AgroShield" width="500">
+  <img src="public/assets/images/poster_agroshield (2).png" alt="Poster AgroShield" width="500">
 </p>
 
 ## 📝 Deskripsi Sistem
